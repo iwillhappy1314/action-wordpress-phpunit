@@ -1,7 +1,6 @@
 FROM debian:stable-slim
 
 RUN apt-get update \
-	&& apt-get install -y subversion rsync git mariadb-server\
 	&& apt-get clean -y \
 	&& rm -rf /var/lib/apt/lists/*
 
