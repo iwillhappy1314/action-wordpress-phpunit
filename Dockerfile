@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
 RUN apt-get update \
-	&& apt-get install -y subversion rsync git mysql-server\
+	&& apt-get install -y subversion rsync git mariadb-server\
 	&& apt-get clean -y \
 	&& systemctl start mysql.service \
 	&& rm -rf /var/lib/apt/lists/*
