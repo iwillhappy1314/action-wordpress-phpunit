@@ -1,0 +1,9 @@
+name: 'WordPress Unit Test'
+description: 'Run WordPress Unit Test'
+author: 'wenprise'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
